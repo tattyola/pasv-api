@@ -5,10 +5,10 @@ describe('operations with numbers', function(){
     const b = 7;
 
     it('addition works correctly', function (){
-        expect(a+b, 'result should equal 12').to.eq(12);
+        expect(a + b, 'result should equal 12').to.eq(12);
     });
 
     it('substraction works correctly', function (){
-        expect(a-b, 'result should equal -2').to.eq(-2);
+        expect(a - b, 'result should equal -2').to.eq(-2);
     });
 });
