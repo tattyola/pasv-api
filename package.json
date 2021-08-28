@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API tests for payment system",
   "scripts": {
-    "test": "npm mocha --config.mocharc.js"
+    "test": "npx mocha --config .mocharc.js"
   },
   "keywords": [],
   "author": "tatty astroyskaya",
