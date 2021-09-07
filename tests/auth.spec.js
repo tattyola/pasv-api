@@ -4,12 +4,12 @@ import { expect } from 'chai';
 
 
 describe('successful login', function() {
-    const request = supertest('https://paysis.herokuapp.com');
+    const request = supertest(process.env.BASE_URL);
 
     it('successful log in', function() {
         request
             .post('/auth')
-            .send({login:'adminius', password:'supers3cret'})
+            .send({login:process.env.LOGIN, password:process.env.PASSWORD})
             .expect(200)
             .end(function(err, res) {
                 //console.log(res);
