@@ -10,6 +10,7 @@ describe('successful login', function() {
         request
             .post('/auth')
             .send({login:process.env.LOGIN, password:process.env.PASSWORD})
+
             .expect(200)
             .end(function(err, res) {
                 //console.log(res);
